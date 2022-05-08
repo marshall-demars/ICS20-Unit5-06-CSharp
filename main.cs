@@ -24,12 +24,12 @@ class Program
         Console.WriteLine("");
         Console.WriteLine("Please input the second integer:");
         integerTwo = Convert.ToInt32(Console.ReadLine());
-        
+
         // process
         Console.WriteLine("");
         int counter = 0;
         var answer = 0;
-        while (counter < integerTwo) 
+        while (counter < integerTwo)
         {
             Console.WriteLine("Once through loop:" + counter);
             answer = answer + integerOne;
