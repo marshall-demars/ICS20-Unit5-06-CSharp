@@ -31,7 +31,6 @@ class Program
         var answer = 0;
         while (counter < integerTwo)
         {
-            Console.WriteLine("Once through loop:" + counter);
             answer = answer + integerOne;
             counter++;
         }
