@@ -29,13 +29,21 @@ class Program
         Console.WriteLine("");
         int counter = 0;
         var answer = 0;
-        while (counter < integerTwo)
+        if ((integerOne < 0) || (integerTwo < 0))
         {
-            answer = answer + integerOne;
-            counter++;
+            Console.WriteLine("");
+            Console.WriteLine("You can't have negative length! Please input only positive numbers.");
         }
-        Console.WriteLine("The number is " + answer);
-        Console.WriteLine("");
-        Console.WriteLine("\nDone.");
+        else
+        {
+            while (counter < integerTwo)
+            {
+                answer = answer + integerOne;
+                counter++;
+            }
+            Console.WriteLine("The number is " + answer);
+            Console.WriteLine("");
+            Console.WriteLine("\nDone.");
+        }
     }
 }
